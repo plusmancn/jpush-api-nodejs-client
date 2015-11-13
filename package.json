@@ -1,7 +1,7 @@
 {
-  "name": "jpush-sdk",
+  "name": "jpush-sdk-plus",
   "version": "3.2.1",
-  "description": "JPush's officially supported Node.js client library.",
+  "description": "Fork From JPush's officially supported Node.js client library.",
   "main": "index.js",
   "scripts": {
     "test": "mocha -t 50000 --reporter spec"
@@ -15,8 +15,9 @@
   "author": "jpush",
   "license": "MIT",
   "dependencies": {
-    "request": "~2.27.0",
-    "popularcrypto": "0.0.2"
+    "debug": "^2.2.0",
+    "popularcrypto": "0.0.2",
+    "request": "~2.27.0"
   },
   "devDependencies": {
     "mocha": "~1.12.1",
@@ -27,7 +28,7 @@
   "homepage": "https://www.jpush.cn/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jpush/jpush-api-nodejs-client.git"
+    "url": "https://github.com/plusmancn/jpush-api-nodejs-client"
   },
   "bugs": {
     "url": "https://github.com/jpush/jpush-api-nodejs-client/issues"
