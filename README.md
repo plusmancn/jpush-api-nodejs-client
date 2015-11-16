@@ -86,17 +86,19 @@ client.getReportReceiveds('746522674,344076897', function(err, res) {
 });
 ```
 
-### 关闭Log
 
-```js
-// 在构建JPushClient对象的时候, 指定isDebug参数
-var client = JPush.buildClient({
-    appKey:'47a3ddda34b2602fa9e17c01',
-    masterSecret:'d94f733358cca97b18b2cb98',
-    isDebug:false
-});
-// or
-var client = JPush.buildClient('47a3ddda34b2602fa9e17c01', 'd94f733358cca97b18b2cb98', null, false);
+### DEBUG 模块Log输出
+引入了TJ的[debug][6]，用于日志输出和性能的调试，运行如下代码开启
+```
+DEBUG=Jpush:* node xxx.js
+```
+类型定义如下
+```
+# 日志类型区分
+JPush:Error 错误日志
+JPush:Warning 警告日志
+JPush:Info 信息日志
+JPush:* 所有JPush相关日志
 ```
 
 ### 单元测试
@@ -112,6 +114,7 @@ mocha test
   [3]: http://docs.jpush.cn/display/dev/Push-API-v3#Push-API-v3-%E6%8E%A8%E9%80%81%E5%AF%B9%E8%B1%A1
   [4]: doc/api.md
   [5]: http://docs.jpush.cn/display/dev/Report-API
+  [6]: https://github.com/visionmedia/debug
 
 
 
