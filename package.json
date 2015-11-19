@@ -16,7 +16,9 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
+    "lodash": "^3.10.1",
     "popularcrypto": "0.0.2",
+    "redis": "^2.3.0",
     "request": "~2.27.0"
   },
   "devDependencies": {
